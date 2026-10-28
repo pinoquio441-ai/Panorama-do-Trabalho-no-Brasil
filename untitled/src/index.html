@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho e Oportunidades no Brasil</title>
+    <!-- Importação do arquivo de Estilos (CSS) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca Chart.js para o gráfico de estatísticas -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Panorama do Trabalho no Brasil</h1>
+        <p>Legislação, estatísticas, combate ao trabalho infantil e oportunidades para jovens.</p>
+    </header>
+
+    <nav>
+        <a href="#estatisticas">Estatísticas</a>
+        <a href="#trabalho-infantil">Trabalho Infantil</a>
+        <a href="#jovem-aprendiz">Jovem Aprendiz</a>
+        <a href="#leis">Leis do Trabalho</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Seção de Estatísticas e Desemprego -->
+        <section id="estatisticas" class="card">
+            <h2>Panorama do Desemprego e Mercado</h2>
+            <p>O mercado de trabalho brasileiro apresenta desafios contínuos, com variações nas taxas de informalidade e desocupação monitoradas pelo IBGE (PNAD Contínua).</p>
+            
+            <div class="chart-container">
+                <canvas id="trabalhoChart"></canvas>
+            </div>
+            <p><em>*Valores percentuais aproximados baseados em levantamentos recentes do mercado nacional.</em></p>
+        </section>
+
+        <!-- Seção de Trabalho Infantil -->
+        <section id="trabalho-infantil" class="card">
+            <h2>Combate ao Trabalho Infantil</h2>
+            <p>No Brasil, o trabalho é <strong>proibido para menores de 16 anos</strong>, exceto na condição de aprendiz a partir dos 14 anos. O trabalho noturno, perigoso ou insalubre é vetado até os 18 anos.</p>
+            
+            <div class="alert-box">
+                <strong>Denuncie o Trabalho Infantil:</strong> Disque 100 (Direitos Humanos) ou procure o Conselho Tutelar da sua região. A denúncia é anônima e gratuita.
+            </div>
+        </section>
+
+        <!-- Seção Jovem Aprendiz -->
+        <section id="jovem-aprendiz" class="card">
+            <h2>Oportunidades: Jovem Aprendiz</h2>
+            <p>A Lei da Aprendizagem (Lei nº 10.097/2000) determina que empresas de médio e grande porte devem contratar jovens entre 14 e 24 anos como aprendizes.</p>
+            
+            <h3>Benefícios do Programa:</h3>
+            <ul>
+                <li>Carteira de trabalho assinada e salário mínimo/hora;</li>
+                <li>Jornada máxima de 6 horas diárias (para quem estuda);</li>
+                <li>Curso de capacitação profissional concomitante;</li>
+                <li>Direito a FGTS e férias coincidentes com as escolares.</li>
+            </ul>
+
+            <h3>Onde encontrar vagas:</h3>
+            <ul>
+                <li>CIEE (Centro de Integração Empresa-Escola)</li>
+                <li>NUBE (Núcleo Brasileiro de Estágios)</li>
+                <li>Sistema S (SENAI, SENAC, SESI, SESC)</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Leis do Trabalho -->
+        <section id="leis" class="card">
+            <h2>Legislação Trabalhista (CLT)</h2>
+            <p>A Consolidação das Leis do Trabalho (CLT) regenda as relações de trabalho no Brasil. Principais pilares e direitos do trabalhador formal:</p>
+            
+            <ul>
+                <li><strong>Jornada de Trabalho:</strong> Limite de 8 horas diárias e 44 horas semanais.</li>
+                <li><strong>13º Salário:</strong> Gratificação paga no final do ano em duas parcelas.</li>
+                <li><strong>Férias Remuneradas:</strong> Direito a 30 dias de descanso após 12 meses de trabalho com adicional de 1/3 do salário.</li>
+                <li><strong>FGTS:</strong> Fundo de Garantia depositado mensalmente pelo empregador (8% do salário).</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Portal Informativo do Trabalho no Brasil. Conteúdo educacional e informativo.</p>
+    </footer>
+
+    <!-- Importação do arquivo de comportamento (JavaScript) -->
+    <script src="script.js"></script>
+</body>
+</html>
